@@ -12,6 +12,13 @@ window.onload = function() {
 		}
 	}
 
+	// Dismiss modal on ESC key
+	document.addEventListener("keyup", function(e) {
+		if (e.keyCode === 27) {
+			hideModal();
+		}
+	});
+
 	function showModal() {
 		scrim.classList.add("active");
 	}
