@@ -2,3 +2,35 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.modal-container {
+	display: none;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	background: rgba(0,0,0,.1);
+
+	/* display: flex; <-- enabled when .active */
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-container.active {
+	display: flex;
+}
+
+.modal-container .modal {
+	min-width: 40vw;
+	min-height: 30vh;
+
+	background: white;
+	box-shadow: 2px 4px 8px 2px rgba(0,0,0,.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
