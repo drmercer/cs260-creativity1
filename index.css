@@ -16,7 +16,7 @@ body {
 }
 
 .banner {
-	background: url("/images/hackathon.jpg") center/cover no-repeat;
+	background: url("images/hackathon.jpg") center/cover no-repeat;
 	height: 20vh;
 	width: 100vw;
 }
