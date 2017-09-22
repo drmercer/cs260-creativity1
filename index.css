@@ -54,6 +54,7 @@ a {
 	background: rgba(255,255,255,.7);
 	border-radius: 1.2rem;
 	margin: 1.1rem 2rem;
+	max-width: 100%;
 	width: 500px;
 	padding: .5rem .9rem;
 	text-align: center;
