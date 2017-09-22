@@ -13,6 +13,7 @@ body {
 	margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+	margin-bottom: 100px;
 }
 
 .banner {
@@ -41,19 +42,28 @@ body {
 	margin: 0 1rem;
 }
 
-.about {
-	margin: 0 2rem;
+.content {
+	margin: 0 auto;
+	max-width: 500px;
 	text-align: center;
+	font-size: 2rem;
 }
 
-.about h1 {
+.content h1 {
 	font-size: 3rem;
 	margin-bottom: 1rem;
 }
 
-.about p {
-	font-size: 2rem;
+.content h2 {
+	font-size: 1rem;
+}
+
+.content p {
 	margin-top: 1rem;
+}
+
+.rules ul {
+	text-align: left;
 }
 
 .sign-up {
