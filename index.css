@@ -1,6 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+}
+
 body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 0;
-	padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.banner {
+	background: url("/images/hackathon.jpg") center/cover no-repeat;
+	height: 20vh;
+	width: 100vw;
+}
+
+.title-box {
+	background-color: rgba(70, 136, 236, 0.8);
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+.title {
+	font-size: 2rem;
+	margin: 0 1rem;
+}
+
+.subtitle {
+	display: none;
+	font-size: 2rem;
+	font-style: italic;
+	margin: 0 1rem;
+}
+
+.sign-up {
+	background-color: rgb(70, 136, 236);
+	border: none;
+	bottom: 0;
+	color: white;
+	cursor: pointer;
+	display: block;
+	font-size: 2rem;
+	padding: 2rem;
+	position: fixed;
+	width: 100%;
+}
+
+.sign-up:focus {
+	outline: 0;
 }
 
 .modal-container {
@@ -24,20 +79,73 @@ body {
 }
 
 .modal-container .modal {
+	font-size: 1.5rem;
+
 	min-width: 40vw;
 	min-height: 30vh;
 
 	background: white;
-	box-shadow: 2px 4px 8px 2px rgba(0,0,0,.3);
+	box-shadow: 0.2rem 0.4rem 0.8rem 0.2rem rgba(0,0,0,.3);
 
-	padding: 20px;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+.modal .desc {
+	margin: auto;
+}
+
 .modal label {
-	align-self: flex-end;
-	margin: 10px 50px;
+	align-items: center;
+	display: flex;
+	margin: 0.5rem 5rem;
+	width: 100%;
+}
+
+.modal input {
+	border: none;
+	border-bottom: 0.1rem solid black;
+	margin-left: 1rem;
+	padding: 0.3rem;
+	width: 100%;
+}
+
+.modal label:last-child {
+	margin-bottom: auto;
+}
+
+.modal input:focus {
+	outline: none;
+	border-bottom: 0.2rem solid rgb(70, 136, 236);
+}
+
+@media(min-width: 512px) {
+	.banner {
+		height: 30vh;
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}
+
+@media(min-width: 768px) {
+	.banner {
+		height: 40vh;
+	}
+
+	.title {
+		font-size: 5rem;
+	}
+
+	.subtitle {
+		display: block;
+	}
+
+	.sign-up {
+		font-size: 3rem;
+	}
 }
