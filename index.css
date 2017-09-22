@@ -41,6 +41,21 @@ body {
 	margin: 0 1rem;
 }
 
+.about {
+	margin: 0 2rem;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.about p {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
 .sign-up {
 	background-color: rgb(70, 136, 236);
 	border: none;
